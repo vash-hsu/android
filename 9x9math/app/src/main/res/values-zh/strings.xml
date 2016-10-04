@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">99加減乘除趣</string>
+    <string name="display_plus">加法</string>
+    <string name="display_minus">減法</string>
+    <string name="display_times">乘法</string>
+    <string name="display_divide">除法</string>
+    <string name="display_ranking">排名</string>
+    <string name="display_quit">離開</string>
+    <string name="title_encourage">差一點</string>
+    <string name="message_encourage">再試一次，你行的!</string>
+    <string name="display_confirm">瞭解</string>
+</resources>

@@ -16,11 +16,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         // prepare button and activity
         final int[] ready_id = new int[]{
-                R.id.button_plus, R.id.button_times
+                R.id.button_plus, R.id.button_times,
+                R.id.button_minus, R.id.button_divide,
         };
         // those features under constructions
         final int[] notyet_id = new int[]{
-                R.id.button_minus, R.id.button_divide,
                 R.id.button_ranking, R.id.button_quit
         };
         // disable those not-yet-implement features
@@ -29,9 +29,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             button.setClickable(false);
             button.setTextColor(Color.GRAY);
         }
-        // 2016/9/15  A * B = C
-        //final Button buttonTimes = (Button) findViewById(R.id.button_times);
-        //buttonTimes.setOnClickListener(this);
         for (int id : ready_id){
             Button button = (Button) findViewById(id);
             button.setOnClickListener(this);
@@ -48,6 +45,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else if(view == findViewById(R.id.button_plus))
         {
             intent = new Intent(this, PlusActivity.class);
+        }
+        else if(view == findViewById(R.id.button_minus))
+        {
+            intent = new Intent(this, MinusActivity.class);
+        }
+        else if(view == findViewById(R.id.button_divide))
+        {
+            intent = new Intent(this, DivideActivity.class);
         }
         else
         {
